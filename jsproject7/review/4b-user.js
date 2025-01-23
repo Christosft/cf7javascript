@@ -1,6 +1,6 @@
 const user = {
   firstname: "Alice",
-  age: 25,
+  age: /*25*/prompt("Give Alice age"),
   isStudent: false
 }
 
@@ -22,4 +22,4 @@ if (ageVar) {
   isStudent = "Alice is a student"
 }
 
-console.log(isStudent);
+document.write(isStudent);
