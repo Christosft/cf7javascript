@@ -1,11 +1,32 @@
-const cars = prompt("Give car brand!")
-const ferrari = 350
-const lamborghini = 330
-const porsche = 300
-const topSpeed = cars
+const cars = {
+  ferrari: 350,
+  lambo: 330,
+  porsche: 310,
+  maserati: 295
+}
 
-function topSpeed() {
-  if (ferrari >= 300) {
-    document.writeln("the ferrari top speed:" + ferrari + "is more than 300");
-  }
+const topSpeed = 310;
+
+if (cars.ferrari > topSpeed) {
+  document.write(`Ferrari top speed ${cars.ferrari} is more than 310kmh`);
+} else {
+  document.write(`Ferrari top speed ${cars.ferrari} is less than 310kmh`)
+}
+
+if (cars.lambo > topSpeed) {
+  document.write(`--- Lambo top speed ${cars.lambo} is more than 310kmh`);
+} else {
+  document.write(`--- Lambo top speed ${cars.lambo} is less than 310kmh`)
+}
+
+if (cars.porsche > topSpeed) {
+  document.write(`--- Porsche top speed ${cars.porsche} is more than 310kmh`);
+} else {
+  document.write(`--- Porsche top speed ${cars.porsche} is less than 310kmh`)
+}
+
+if (cars.maserati > topSpeed) {
+  document.write(`--- Maserati top speed ${cars.maserati} is more than 310kmh`);
+} else {
+  document.write(`--- Maserati top speed ${cars.maserati} is less than 310kmh`)
 }
