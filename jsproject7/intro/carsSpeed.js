@@ -29,7 +29,7 @@ const drivers = [{
 },
 {
   lastname: prompt("Give driver's name"),
-  driverTopSpeed: 310
+  driverTopSpeed: 310,
 }]
 
 const speedLimit = 310;
