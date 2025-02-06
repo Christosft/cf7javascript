@@ -1,10 +1,10 @@
 const students = ["Alice", "Andreas", "Bob", "Costas", "Andreas"]
 
-students.forEach(function (stu, _, arr) {
-  console.log(stu, arr)
+students.forEach(function (val, index, _, arr) {
+  console.log(val, index, arr)
 })
 
-let filtered = students.filter(student => student == "Andreas")
+let filtered = students.filter(student => student === "Andreas")
 console.log(filtered)
 
 let mapped = students.map(student => "student: " + student)
